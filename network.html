@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Txrantt Network</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 60px rgba(0,0,0,0.7);
+  animation: fadeIn 1s ease;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  display: block;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #5865F2, #404EED);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  box-shadow: 0 0 15px rgba(88,101,242,0.4);
+}
+
+.button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 25px rgba(88,101,242,0.7);
+}
+
+/* back button */
+.back {
+  margin-top: 25px;
+  font-size: 12px;
+  opacity: 0.5;
+  text-decoration: none;
+  color: white;
+}
+
+.back:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Welcome to the Txrantt Network</h1>
+
+  <div class="buttons">
+    <a class="button" href="https://txrantt.vercel.app">txrantt.vercel.app</a>
+    <a class="button" href="https://aargh.vercel.app">aargh.vercel.app</a>
+    <a class="button" href="https://complicate.vercel.app">complicate.vercel.app</a>
+  </div>
+
+  <a class="back" href="/">← back</a>
+</div>
+
+</body>
+</html>
